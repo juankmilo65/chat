@@ -27,5 +27,7 @@ io.on("connection", function (socket) {
 });
 
 server.listen(6677, function () {
-  console.log("Servidor está funcionando en http://localhost:6677");
+  console.log(
+    "Servidor está funcionando en https://chat-sockets-test.herokuapp.com/"
+  );
 });
