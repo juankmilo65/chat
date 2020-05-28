@@ -26,8 +26,7 @@ io.on("connection", function (socket) {
   });
 });
 
-server.listen(6677, function () {
-  console.log(
-    "Servidor está funcionando en https://chat-sockets-test.herokuapp.com/"
-  );
-});
+const port = process.env.PORT || 3000;
+server.listen(port, () =>
+  console.log(`https://chat-sockets-test.herokuapp.com: ${port}`)
+);
