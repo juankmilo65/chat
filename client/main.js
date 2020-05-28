@@ -1,4 +1,4 @@
-var socket = io.connect("https://chat-sockets-test.herokuapp.com:9498", {
+var socket = io.connect("https://chat-sockets-test.herokuapp.com", {
   forceNew: true,
 });
 socket.on("messages", function (data) {
