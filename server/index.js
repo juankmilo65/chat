@@ -28,5 +28,5 @@ io.on("connection", function (socket) {
 
 const port = process.env.PORT || 3000;
 server.listen(port, () =>
-  console.log(`https://chat-sockets-test.herokuapp.com: ${port}`)
+  console.log(`https://chat-sockets-test.herokuapp.com:${port}`)
 );

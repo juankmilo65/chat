@@ -1,6 +1,4 @@
-const port = process.env.PORT || 3000;
-
-var socket = io.connect(`https://chat-sockets-test.herokuapp.com: ${port}`, {
+var socket = io.connect("https://chat-sockets-test.herokuapp.com:9498", {
   forceNew: true,
 });
 socket.on("messages", function (data) {
